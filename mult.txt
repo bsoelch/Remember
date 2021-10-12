@@ -1,0 +1,8 @@
+REMEMBER a 6
+REMEMBER b 7
+REMEMBER sum 0
+REMEMBER loop LINE
+REMEMBER sum ADD sum b
+REMEMBER a ADD a -1
+JGT loop a
+PRINT sum
