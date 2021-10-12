@@ -1,5 +1,5 @@
 # Remember
-Simple interpreted [esoteric programing language](
+Remember is a simple interpreted [esoteric programing language](
 https://esolangs.org
 )
 
