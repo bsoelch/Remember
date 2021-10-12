@@ -2,22 +2,26 @@
 Simple interpreted [esoteric programing language](
 https://esolangs.org
 )
+
+
 Like the human short term memory this language can 
 only remember a limited number (8) objects at any time
 and forgets all additional objects without warning.
 
 ## Usage
-Write the code in a text-file.
-run Main.main.
+1. Write the code you want to run in a text-file.
+2. Run Main.main()
 The program should output:
 ```
 Input a Filename:
 ```
-Supply the name of the file to run, 
+3. Supply the name of the file to run, 
 use the prefix "." for files in the local directory
 
-##Syntax:
-the program is organized in lines of operations and values 
+## Syntax:
+Look at [demo.txt](/examples/demo.txt) for a demonstartion of the basis synatx.
+
+The program is organized in lines of operations and values 
 separated by spaces.
 
 the program is executed line by line.
