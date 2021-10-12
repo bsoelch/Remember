@@ -6,9 +6,12 @@ import java.util.regex.Pattern;
 public class Main {
     static private final Scanner inScanner =new Scanner(System.in);
 
-    private static final int MAX_INT_LEN = 8;//maximum number of digits that will be read from an integer
+    /**maximum number of digits that will be read from an integer*/
+    private static final int MAX_INT_LEN = 8;
 
-    private static final int MEM_SIZE = 8;//maximal number of distinct values that program can remember
+    /**maximal number of distinct values that program can remember*/
+    private static final int MEM_SIZE = 8;
+    //8 since it is the smallest number for which if found a working multiplication program
 
     private static final Pattern VAR_REGEX = Pattern.compile("[a-zA-Z][a-zA-Z_0-9]*");
     private static final Pattern INT_PATTERN = Pattern.compile("0|(-?[1-9][0-9]*)");
@@ -141,7 +144,7 @@ public class Main {
                                 forget("&FORGET");//free stack
                             }else if(parts[0].equalsIgnoreCase("JUMP")){
                                 forget("&JUMP");//free stack
-                                return remember(parts[1]);
+                                return remember(parts[1]);//jump
                             }else{
                                 remember("&VALUE",remember(parts[1]));
                                 rem=1;

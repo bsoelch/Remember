@@ -1,0 +1,21 @@
+REMEMBER a 1
+PRINT ADD 1 ADD 2 ADD 3 4
+PRINT a
+Comment: Any line starting with a invalid operation not be executed
+
+Comment: This is a while loop:
+REMEMBER a 10
+REMEMBER line LINE
+REMEMBER a ADD a NEG 1
+JGE line a
+PRINT a
+
+Comment: You can also use root level operators as identifiers
+REMEMBER REMEMBER 3
+PRINT REMEMBER
+FORGET REMEMBER
+PRINT REMEMBER
+Comment: But value operators will shadow remembered words of the same name
+REMEMBER ADD 3
+PRINT ADD
+
