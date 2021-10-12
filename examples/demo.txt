@@ -1,14 +1,19 @@
 REMEMBER a 1
+REMEMBER b 2 Comment: Anything after a finished operation is ignored
 PRINT ADD 1 ADD 2 ADD 3 4
-PRINT a
+PRINT a Comment: the long operation removed a from the memory
+PRINT b Comment: b barely survived that line
+
 Comment: Any line starting with a invalid operation not be executed
 
 Comment: This is a while loop:
 REMEMBER a 10
 REMEMBER line LINE
-REMEMBER a ADD a NEG 1
+REMEMBER a ADD a NEG 1 Comment: use ADD <x> NEG <y> for x-y
 JGE line a
 PRINT a
+JUMP 9
+Comment: jump command only accept line numbers from memory
 
 Comment: You can also use root level operators as identifiers
 REMEMBER REMEMBER 3
