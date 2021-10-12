@@ -19,7 +19,9 @@ Input a Filename:
 use the prefix "." for files in the local directory
 
 ## Syntax:
-the program is organized in lines of operations and values 
+Look at [demo.txt](/examples/demo.txt) for a demonstartion of the basis synatx.
+
+The program is organized in lines of operations and values 
 separated by spaces.
 
 the program is executed line by line.
